@@ -1,0 +1,15 @@
+{
+  "name": "MeadowLark",
+  "version": "1.0.0",
+  "description": "MeadowLark Travel Website",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajay R",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.7",
+    "express-handlebars": "^1.1.0"
+  }
+}
