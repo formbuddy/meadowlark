@@ -1,7 +1,7 @@
 var express = require('express');
 var fortune = require('./lib/fortune.js');
 var formidable = require('formidable');
-
+var bodyParser = require('body-parser')
 
 var app = express();
 
@@ -14,7 +14,11 @@ app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
-app.use(require('body-parser')());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 app.use(function(req, res, next){
     res.locals.showTests = app.get('env') !== 'production' &&
