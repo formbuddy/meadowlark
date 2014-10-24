@@ -9,6 +9,7 @@
   "author": "Ajay R",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.9.1",
     "express": "^4.9.7",
     "express-handlebars": "^1.1.0",
     "formidable": "^1.0.15"
